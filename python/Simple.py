@@ -134,7 +134,19 @@ print r"c:\\tools\\code\\gs-python"
 # unicode support
 print u'Hello\u0020World !'
 # python list
-a = ['change', 'java', 10, 100]
+
+
+a = ['change', 'java', 1, 111]
+# for x in a:
+# print x, len(str(x))
+
+for x in range(len(a)):
+    if a[x] == 1:
+        print a[x], 'equals', '1'
+        break
+    # continue
+    print x, a[x]
+
 # iterator list
 print a
 # list item 0
@@ -153,3 +165,23 @@ print a[-2]
 # set  list length-2 item value
 a[-2] = 200
 print a[-2]
+# substring 0 to 2 like string substring
+print a[0:2]
+
+# replace list items
+a[0:2] = ["alice", "jim"]
+
+print a
+
+a[0:2] = []
+
+print a
+
+a[:] = []
+print a
+
+print len(a)
+a, b = 0, 1
+while b < 10:
+    print b
+    a, b = b, a + b
