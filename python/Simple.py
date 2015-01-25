@@ -93,3 +93,6 @@ print str("hello world")
 
 print repr(100000000000000)
 print str(100000000000000)
+
+temp = 43
+print "the temperature is " + repr(temp)
